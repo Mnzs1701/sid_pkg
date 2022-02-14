@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <group ns="sid_bot">
+        <include file="$(find raspicam_node)/launch/camerav2_410x308_30fps.launch"/>
+	<arg name="enable_raw" value="true"/>
+	<!-- We call the service to start the camera publication -->
+        <node name="start_camera_service"
+            pkg="sid_pkg"
+            type="start_camera_service.py"
+            respawn="false" output="screen">
+        </node>
+    </group>
+</launch>

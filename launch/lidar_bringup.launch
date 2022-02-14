@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <include file="$(find sid_pkg)/launch/motor_driver_start.launch"/>
+    <include file="$(find sid_pkg)/launch/camera_bringup.launch"/>
+    <include file="$(find rplidar_ros)/launch/rplidar.launch"/>
+</launch>
+

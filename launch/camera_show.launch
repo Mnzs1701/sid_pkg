@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+        <node name="camera_show"
+            pkg="image_view"
+            type="image_view"
+            respawn="false" output="screen">
+	    <remap from="image" to="/sid_bot/raspicam_node/image" />
+	    <param name="image_transport" value="compressed"/> 
+        </node>
+</launch>
